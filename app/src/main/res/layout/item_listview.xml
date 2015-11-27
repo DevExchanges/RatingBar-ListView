@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
     android:orientation="horizontal">
 
     <RatingBar
@@ -9,18 +10,18 @@
         style="@style/ratingBarStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="0.4"
+        android:layout_weight="0.5"
         android:maxWidth="20dp"
         android:minWidth="20dp"
         android:numStars="5"
-        android:stepSize="0.5" />
+        android:stepSize="1" />
 
     <TextView
         android:id="@+id/text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_weight="0.6"
+        android:layout_weight="0.5"
         android:gravity="center"
         android:textStyle="bold" />
 
